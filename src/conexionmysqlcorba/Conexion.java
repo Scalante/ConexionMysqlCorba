@@ -10,10 +10,10 @@ import javax.swing.JOptionPane;
  */
 public class Conexion {
     
-    public String db = "bdcontactos";
+    public String db = "basedatocorba";
     public String url = "jdbc:mysql://localhost/"+db;
     public String user = "root";
-    public String pass = "123";
+    public String pass = "corhuila2018";
 
 
    public Connection Conectar(){
@@ -25,6 +25,8 @@ public class Conexion {
            Class.forName("org.gjt.mm.mysql.Driver");
 
            link = DriverManager.getConnection(this.url, this.user, this.pass);
+           
+           JOptionPane.showMessageDialog(null, "Conexion establecida.");
 
        }catch(Exception ex){
 
