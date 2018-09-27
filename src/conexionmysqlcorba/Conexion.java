@@ -14,9 +14,12 @@ public class Conexion {
     public String url = "jdbc:mysql://localhost/"+db;
     public String user = "root";
     public String pass = "corhuila2018";
+    public Connection link;
 
 
    public Connection Conectar(){
+       
+       
 
        Connection link = null;
 
