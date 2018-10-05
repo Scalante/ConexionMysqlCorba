@@ -16,7 +16,7 @@ public class PruebaConexion {
         Conexion conex = new Conexion();
         
         
-        conex.Conectar();
+        conex.conectar();
         
         
         

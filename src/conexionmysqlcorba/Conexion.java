@@ -17,7 +17,7 @@ public class Conexion {
     public Connection link;
 
 
-   public Connection Conectar(){
+   public Connection conectar(){
        
        
 
