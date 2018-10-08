@@ -39,7 +39,7 @@ public class Tercero extends TerceroPOA{
             
             String sqlConsultar = "Select * from terceros where id = " + id;
             objConect.conectar();
-            Statement st = objConect.link.createStatement();
+            Statement st = objConect.conex.createStatement();
             ResultSet rs = st.executeQuery(sqlConsultar);
             
             while (rs.next()) {                
@@ -69,12 +69,12 @@ public class Tercero extends TerceroPOA{
         try {
             String sqlConsultar = "Select nombres, apellidos, telefono from terceros";
             objConect.conectar();
-            Statement st = objConect.link.createStatement();
+            Statement st = objConect.conex.createStatement();
             resultado = st.executeQuery(sqlConsultar);
            
             //Cerrar las conexiones.
            // rs.close();
-            objConect.link.close();
+            objConect.conex.close();
             
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error " + e.getMessage());
