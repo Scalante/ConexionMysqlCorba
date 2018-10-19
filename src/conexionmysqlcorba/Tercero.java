@@ -83,6 +83,14 @@ public class Tercero extends TerceroPOA{
         
         
     }
+
+    boolean insertarTercero(String nombres, String apellidos, int telefono) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    boolean actualizarTercero(int id, String nombres, String apellidos, int telefono) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
