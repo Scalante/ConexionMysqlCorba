@@ -7,7 +7,7 @@ public class Conexion{
     public Connection conectar(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conex = DriverManager.getConnection("jdbc:mysql://localhost/basedatocorba","root","corhuila2018");
+            conex = DriverManager.getConnection("jdbc:mysql://localhost/bdterceros","root","corhuila2018");
             System.out.println("Conexion establecida.");
         } catch (Exception e) {
             System.out.println(e.getMessage());

@@ -1,5 +1,5 @@
 package conexionmysqlcorba;
-import Terceros.*;
+import conexionmysqlcorba.Terceros.TerceroPOA;
 import java.sql.*;
 import javax.swing.JOptionPane;
 
@@ -67,14 +67,14 @@ public class Tercero extends TerceroPOA{
        ResultSet resultado = null;
        
         try {
-            String sqlConsultar = "Select nombres, apellidos, telefono from terceros";
+            String sqlConsultar = "Select nombre, apellido, telefono from terceros";
             objConect.conectar();
             Statement st = objConect.conex.createStatement();
             resultado = st.executeQuery(sqlConsultar);
            
             //Cerrar las conexiones.
            // rs.close();
-            objConect.conex.close();
+            //objConect.conex.close();
             
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error " + e.getMessage());
